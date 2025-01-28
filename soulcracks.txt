@@ -1,0 +1,51 @@
+Shellcode Injection or Buffer Overflow Exploitation
+
+90: NOP (No Operation)
+91: XCHG ECX, ECX
+92: XCHG EDX, EDX
+93: XCHG EBX, EBX
+94: XCHG ESP, ESP
+95: XCHG EBP, EBP
+96: XCHG ESI, ESI
+97: XCHG EDI, EDI
+31 c0: XOR EAX, EAX
+50: PUSH EAX
+68: PUSH (used for pushing immediate values like a string)
+2F\x2F\x73\x68: //sh 
+68\x2F\x62\x69\x6E: /bin 
+89\xE3: MOV EBX, ESP
+31\xC9: XOR ECX, ECX
+31\xD2: XOR EDX, EDX
+B0\x0B: MOV AL, 0x0B
+CD\x80: INT 0x80 (system call)
+EB\xFE: JMP -2 (infinite loop)
+C3: RET (return instruction)
+FF\xE0: JMP EAX
+F4: HLT (halt the processor)
+C9: LEAVE (stack cleanup)
+33: XOR (typically used for zeroing out registers or encoding)
+6A\x01: PUSH 1 (used in reverse shell payloads)
+6A\x02: PUSH 2 (used in reverse shell payloads)
+00: Null Byte (often a bad character in payloads)
+
+Today I will you About Shellcode Injection or Buffer Overflow Exploitation Method To make Playload for C file
+This is some type of value for c file which can be used 
+like i will show you 90 which is know as NOP Value
+I show Now
+90 is NOP
+90 i will show you
+how much kb payload you want to make 
+1kb = 1024 byte in smaple way 
+less number of byte = high number of thread needed but 
+if you try to use high level to kb payload your system will increase fastly
+now playload is ready to use Now to add in c file
+find playload place 
+its ready to use Now
+compass command
+gcc soul.c -o soul -lpthread
+its complete now enjoy 
+make your own binary now 
+lund ka scam kr rha kuch gandu developer 
+join @SOULCRACKS
+
+
